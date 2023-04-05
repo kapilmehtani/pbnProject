@@ -1,0 +1,46 @@
+.container {
+    background-color: white;
+    .filter {
+        div {
+            align-items: center;
+            display: flex;
+            padding: 5px;
+            width: 190px;
+            margin: 10px;
+            border-radius: 20px;
+            background-color: #f2f2f2;
+            height: 20px;
+            .dot {
+                margin: 0 5px 0 10px;
+                border-radius: 50px;
+                width: 7px;
+                height: 7px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}

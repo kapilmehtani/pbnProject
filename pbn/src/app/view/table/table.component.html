@@ -1,0 +1,48 @@
+<div class="table">
+    <div class="tabs">
+        <span (click)="activeTab('payType')">Paytype ID</span>
+        <span (click)="activeTab('provider')">Provider ID</span>
+        <span (click)="activeTab('employee')">Employee ID</span>
+    </div>
+    <table *ngIf="active == 'provider'">
+        <thead>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Provider Name</th>
+        </thead>
+        <tbody *ngFor="let i of providerData">
+            <td>{{i.date}}</td>
+            <td>{{i.amount}}</td>
+            <td>{{data.categories.provider_id[i.provider_id]}}</td>
+        </tbody>
+
+    </table>
+
+    <table *ngIf="active == 'employee'">
+        <thead>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Employee Name</th>
+        </thead>
+        <tbody *ngFor="let i of employeetypeData">
+            <td>{{i.date}}</td>
+            <td>{{i.amount}}</td>
+            <td>{{data.categories.employee_type_id[i.employee_type_id]}}</td>
+        </tbody>
+
+    </table>
+
+    <table *ngIf="active=='payType'">
+        <thead>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Payment Mode</th>
+        </thead>
+        <tbody *ngFor="let i of paytypeData">
+            <td>{{i.date}}</td>
+            <td>{{i.amount}}</td>
+            <td>{{data.categories.paytype_id[i.paytype_id]}}</td>
+        </tbody>
+
+    </table>
+</div>

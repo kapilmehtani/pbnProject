@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+}
+
+.links {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .inner-link {
+        cursor: pointer;
+        height: 70px;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 5px;
+        width: 300px;
+        background-color: white;
+        align-content: center;
+        border-radius: 10px;
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            
+        }
+
+        img {
+            height: 30px;
+            padding: 3px;
+            border: 1px solid;
+            border-radius: 50px;
+        }
+    }
+}
+
+.heroImg{
+    img{
+        height: 270px;
+    }
+}
